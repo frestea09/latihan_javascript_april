@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Belejar Web Programming
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            class Meetup{
+                constructor(name=null,location=null){
+                    this._name = name;
+                }
+                get name(){
+                    return this._name;
+                }
+                set name(inputName){
+                    this._name = inputName;
+                }
+                sayHello(){
+                    alert('hello'+ this._name);
+                }
+            }
+            class AnakaMeetup extends Meetup{
+                constructor(name,inputAnak=null){
+                    super(name);
+                    this._namaAnak = inputAnak;
+                }
+                sayName(){
+                    let hasil = this._name + 'ganteng';
+                    return hasil;
+                }
+            }
+            var myObj = new AnakaMeetup();
+            myObj.name = "ilman";
+            alert(myObj.sayName());
+            
+        </script>
+    </body>
+</html>

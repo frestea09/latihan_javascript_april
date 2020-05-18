@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Web Programming</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function KerangkaHello(){
+                var hello;
+                this.setHello = function(inputVariabel){
+                    hello = inputVariabel;
+                }
+                this.getHello = function(){
+                    return hello;
+                }
+            };
+            function KelasHello(){};
+            KelasHello.prototype.constructor = KerangkaHello;
+            KelasHello.prototype.sayHello = function() {
+                var nama = "ilman";
+                hasil = nama + KelasHello.getHello();
+                return hasil
+            }
+            var objSaya = new KerangkaHello;
+            objSaya.setHello('ganteng');
+            alert(objSaya.sayHello());
+
+
+        </script>
+    </body>
+</html>

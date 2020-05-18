@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="description" content="latihan javascripts">
+        <meta name="keywords" content="HTML,Javascript,CSS">
+        <title>
+            Belajar Javascript
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var threshold = confirm("Tampilkan Data : ");
+            var inputBilanganPertama = prompt("Bilangan Pertama : ");
+            var inputBilanganKedua = prompt("Bilangan Kedua : ");
+            var thresholdGanjil = inputBilanganPertama % 2;
+            var hasilTambah = inputBilanganPertama + inputBilanganKedua;
+            var hasilKurang = inputBilanganPertama - inputBilanganKedua;
+            var hasilKali = inputBilanganPertama * inputBilanganKedua;
+            var hasilBagi = inputBilanganPertama / inputBilanganKedua;
+            if(threshold==true){
+                alert(thresholdGanjil);
+                document.writeln("Bilangan Pertama : "+inputBilanganPertama);
+                document.writeln("Bilangan Kedua : "+inputBilanganPertama);
+                document.writeln("Hasil Tambah : "+hasilTambah);
+                document.writeln("Hasil Kurang : "+hasilKurang);
+                document.writeln("Hasil Kali : "+hasilKali);
+                document.writeln("Hasil Bagi : "+hasilBagi);
+                document.writeln("Increment : "+inputBilanganPertama++);
+            }
+        </script>
+    </body>
+</html>

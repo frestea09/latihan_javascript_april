@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="keywords" content="HTML,Javascript,CSS">
+        <meta name="description" content="belajar web programming javascripts">
+        <title>
+            Belajar Javascripts
+        </title>
+    </head>
+    <body>
+        <h3>Belajar Javascripts</h3>
+        <script type="text/javascript">
+            var threhold = confirm("Tampilkan Data : ");
+            var inputBilanganPertama = prompt("Bilangan Pertama : ");
+            var inputBilanganKedua = prompt("Bilangan Kedua : ");
+            var inputKalimatPertama = prompt("Kalimat Pertama : ");
+            var inputKalimatKedua = prompt("Kalimat Kedua : ");
+            var hasilSamaBilangan=false;
+            var hasilSamaKalimat=false;
+            var hasilLebihBesar = false;
+            var hasilLebihKecil = false;
+            var hasilTidakSamaDengan = false;
+            if(inputBilanganPertama == inputBilanganKedua){
+                hasilSamaBilangan = true;
+            }
+            if(inputKalimatPertama.toLowerCase() == inputKalimatKedua.toLowerCase()){
+                hasilSamaKalimat = true;
+            }
+            if(inputBilanganPertama>inputBilanganKedua){
+                hasilLebihBesar = true;
+            }
+            if(inputBilanganPertama<inputBilanganKedua){
+                hasilLebihKecil = true;
+            }
+            if(inputBilanganPertama != inputBilanganKedua){
+                hasilTidakSamaDengan = true;
+            }
+            if(threhold==true){
+                document.writeln("Bilangan Pertama  : "+inputBilanganPertama+"<br/>");
+                document.writeln("Bilangan Kedua  : "+inputBilanganKedua+"<br/>");
+                document.writeln("Kalimat Pertama   : "+inputKalimatPertama+"<br/>");
+                document.writeln("Kalimat Kedua  : "+inputKalimatKedua+"<br/>");
+                document.writeln("Kalimat Sama : "+hasilSamaKalimat+"<br/>");
+                document.writeln("Bilangan Sama : "+hasilSamaBilangan+"<br/>");
+                document.writeln("Bilangan Pertama Lebih Kecil : "+hasilLebihKecil+"<br/>");
+                document.writeln("Bilangan Pertama Lebih Besar "+hasilLebihBesar+"<br/>");
+                document.writeln("Bilangan TIdak sama dengan : "+hasilTidakSamaDengan+"<br/>");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="description" content="Belajar Web Programming menggunakan Javascript">
+        <meta name="keywords" content="HTML,CSS,Javascript"> 
+        <title>
+            Belajar Web Programming
+        </title>
+    </head>
+    <body>
+        <div id='container'>
+            <form name="formBelajar" action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>Bilangan Pertama : </td>
+                        <td>
+                            <input id="bilanganPertama" name="bilanganPertama" type="text" onkeyup="tambah();"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Bilangan Pertama : </td>
+                        <td>
+                            <input id="bilanganKedua" name="bilanganPertama" type="text" onkeyup="tambah();"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hasil : </td>
+                        <td>
+                            <input id="hasil" name="hasil" type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input name="tombolSubmit" type="submit" onclick="tambah();" value="tambah"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p class="hijau">Ilman</p>
+            <p class="hijau">Teguh</p>
+            <p>Prasetya</p>
+        </div>
+        <script src="operasi_tambah.js"></script>
+    </body>
+</html>

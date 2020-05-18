@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="description" content="belajar web programming menggunakan javascript">
+        <meta name="keywords" content="HTML,CSS,Javascript">
+        <title>
+            Belajar Web Programming
+        </title>
+    </head>
+    <body>
+        <div id="container">
+            <form id="formMahasiswa" name="formMahasiswa" action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>Name : </td>
+                        <td>
+                            <input id="nameMahasiswa" name="nameMahasiswa" type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age : </td>
+                        <td>
+                            <input id="ageMahasiswa" name="ageMahasiswa" type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender : </td>
+                        <td>
+                            <input id="genderMahasiswa" name="genderMahasiswa" type="radio" value="Female"/>Female<br/>
+                            <input id="genderMahasiswa" name="genderMahasiswa" type="radio" value="Male"/>Male<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Penempaan : </td>
+                        <td>
+                            <select name="penempatanMahasiswa" size="1">
+                                <option value="bandung">Bandung</option>
+                                <option value="surabaya">Surabaya</option>
+                                <option value="surabaya">Jakarta</option>
+                                <option value="jogjakarta">jogjakarta</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobby : </td>
+                        <td>
+                            <input id="Hobby" name="hobby[]" type="checkbox" value="programming"/>programming<br/>
+                            <input id="Hobby" name="hobby[]" type="checkbox"  value="belajar"/>Belajar<br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="submitButton" name="submitButton" type="submit" value="Save"/>
+                        </td>
+                    </tr>
+                </table>
+                <script type="text/javascript" src="empat_form.js"></script>
+            </form>
+        </div>
+    </body>
+</html>

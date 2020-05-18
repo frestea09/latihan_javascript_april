@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="keywords" content="HTML,Javascript,CSS">
+        <meta name="description" content="Belajar Web Programming">
+        <title>
+            Belajar Web Programming
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Buku(){
+                var judul = 'ilman teguh p';
+                this.setJudul = function(inputJudul){
+                    judul = inputJudul;
+                };
+                this.getJudul = function(){
+                    return judul;
+                }
+            }
+            function AnakBuku(){}
+            AnakBuku.prototype = new Buku;
+            AnakBuku.prototype.constructor = Buku;
+            AnakBuku.prototype.bicara = function(){
+                alert('Meow');
+            }
+            var myObj = new AnakBuku;
+            myObj.setJudul('ganteng');
+            document.writeln(myObj.getJudul());
+            myObj.bicara();
+        </script>
+    </body>
+</html>

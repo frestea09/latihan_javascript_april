@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasteya">
+        <meta name="description" content="belajar web programming menggunakan Javascript">
+        <meta name="keywords" content="Javascript,HTML,CSS">
+        <title>
+            Belajar Javascript
+        </title>
+    </head>
+    <body>
+        <div id=container>
+            <h3>Belajar Javascript</h3>
+            <script type="text/javascript">
+                for(var iterasi=0;iterasi<5;iterasi++){
+                    document.write('hello world');
+                }
+                var nama = ['ilman','teguh','prasetya'];
+                for (item in nama){
+                    document.write(nama[item]+'<br/>');
+                }
+                var threholdLoop = true;
+                var iterasiWhile = 0;
+                while(threholdLoop){
+                    document.writeln('hello <br/>');
+                    if(iterasiWhile>5){
+                        threholdLoop = false;
+                    }
+                    iterasiWhile++;
+                }
+            </script>
+        </div>
+    </body>
+</html>

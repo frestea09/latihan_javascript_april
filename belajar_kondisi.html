@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ilman teguh prasetya">
+        <meta name="description" content="belajar web programming dengna javascript">
+        <title>
+            Belajar Javascritp
+        </title>
+    </head>
+    <body>
+        <div id="container">
+            <h3>Belajar Kondisi</h3>
+            <script type="text/javascript">
+                var threshold = confirm('Tampilkan Data ');
+                var inputUts = prompt('Nilai UTS ');
+                var inputUas = prompt('Nilai Uas ');
+                var nilaiUTS = inputUts * (30/100);
+                var nilaiUAS = inputUas * (70/100);
+                var hasil = nilaiUAS + nilaiUTS;
+                var ipk = 'E'
+                if(hasil>=85){
+                    ipk = 'A';
+                }else if((hasil<85)&&(hasil>=70)){
+                    ipk = 'B';
+                }else if((hasil<70)&&(hasil>=50)){
+                    ipk = 'C';
+                }else if((hasil<50)&&(hasil>=30)){
+                    ipk ='D';
+                }else{
+                    ipk = 'E';
+                }
+                document.write('IPK '+ipk);
+            </script>
+        </div>
+    </body>
+</html>
